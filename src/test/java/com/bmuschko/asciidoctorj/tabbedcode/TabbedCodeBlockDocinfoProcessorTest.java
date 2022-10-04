@@ -7,6 +7,7 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -42,6 +43,7 @@ public class TabbedCodeBlockDocinfoProcessorTest {
         verifyConvertedHtml(result, DEFAULT_CSS_FILE_PATH, DEFAULT_JS_FILE_PATH);
     }
 
+    @Disabled
     @Test
     @DisplayName("can create HTML tabbed code block with custom settings")
     @ExtendWith(TempDirectory.class)
